@@ -9,7 +9,7 @@ so people can play around with their own bots.
 
 Install
 ----
-`npm install https://github.com/karlwestin/node-minesweeper.git`
+`npm install https://github.com/karlwestin/node-minesweeper/tarball/master`
 
 Use
 ---
