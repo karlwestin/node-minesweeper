@@ -132,15 +132,22 @@ function draw(square, index) {
   return ret;
 }
 
-Board.prototype.render = function() {
+Board.prototype.render = function(noCount) {
   var board = this.board.map(draw, this);
-  countScore.call(this, board);
-  console.log(board.join(""));
+  if(!noCount) {
+    countScore.call(this, board);
+  }
   return board;
 };
 
 Board.prototype.click = function(x, y) {
-  var point = y * this.width + x;
+  var point;
+  if(typeof y == "number") {
+    point = y * this.width + x;
+  } else {
+    point = x;
+  }
+
   var number = this.board[point].check();
   if(number === 0) {
     check.call(this, point);

@@ -1,0 +1,4 @@
+extends layout
+block body
+  script var settings = { width: #{width}, height: #{height}, id: #{id} };
+  script(src="/static/require.js", data-main="/static/#{app}")

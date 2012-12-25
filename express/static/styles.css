@@ -1,0 +1,14 @@
+.mine {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  float: left;
+  background-image: url("/static/minebackground.png");
+}
+
+.mine_untouched { background-position: 0 0; }
+.mine_empty { background-position: 0 -18px; }
+.mine_one { background-position: 0 -36px; }
+.mine_two { background-position: 0 -54px; }
+.mine_three { background-position: 0 -72px; }
+.mine_dead { background-position: 0 -90px; }
