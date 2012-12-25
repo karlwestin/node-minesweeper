@@ -13,6 +13,7 @@ app.set("views", __dirname + "/views");
 
 var games = {};
 function generateGame(id) {
+  // SET DIFFICULTY HERE: width, height, number of mines
   var w = 20, h = 20;
   var board = new Minesweeper(w, h, 20);
   return {
